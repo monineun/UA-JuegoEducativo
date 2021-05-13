@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+      <meta charset="utf-8">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script type="text/javascript" src="estilo.js"></script>
+      <link href="css/estilo.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="css/fontello.css">
+      <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+      <title>La geometría</title>
+      <script type="text/javascript"> window.onkeydown = compruebaTecla;</script>
+    </head>
+
+    <body style="background: #eee;" onload="crearLienzo();">
+      <div id="col">
+        <div id="col1">
+          <h1 class="icon-pencil">Geometría </h1>
+          <div id="lienzo"></div>
+        </div>
+
+        <div id="col2">
+          <p id="opc"></p>
+          <p id="inf" class="icon-volume-up" onclick="ins()">Utiliza el ratón o las flechas del teclado y "S"</p><br>
+          <p id="num"></p>
+          <progress max="100" value="100" alt="Barra de progreso" ></progress>
+          <button type="button" class="boton icon-help off" id="btn1" onclick="mostrarimagen()">Ayuda</button>
+            <span class="tooltip" id="hep"></span>
+          <button type="button" class="boton icon-eraser" id="btn2" onclick="borra()">Borrar</button>
+          <button type="button" class="boton icon-reply" id="btn3" onclick="amenu()"> Salir </button>
+        </div>
+      </div>
+
+
+  </body>
+
+</html>

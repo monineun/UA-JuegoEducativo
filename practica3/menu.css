@@ -1,0 +1,62 @@
+body{
+  font-family: "Vibur";
+  background-color: lightblue;
+  font-size: 5vw;
+  color:white;
+}
+#bt1{
+  border-style: solid;
+  border-width: 5px;
+  border-color: DarkRed;
+  border-radius: 20px;
+  padding:1.9em;
+  margin-right: 1em;
+  text-align: center;
+  background-color: Red;
+}
+#bt1:hover{
+  background-color: DarkRed !important;
+}
+#bt2{
+  border-style: solid;
+  border-width: 5px;
+  border-color: DarkGreen;
+  border-radius: 20px;
+  padding:2.5em;
+  text-align: center;
+  background-color: LimeGreen;
+}
+#bt2:hover{
+  background-color: DarkGreen !important;
+}
+#titulo{
+  border-style: solid;
+  border-width: 5px;
+  border-color: #fdfd96;
+  border-radius: 5px;
+  text-align: center;
+  width:33.33vw;
+  margin: auto;
+  margin-bottom: 0.5em;
+  padding:0.5em;
+  background-color: gold;
+}
+#botones{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  #botones{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+  #bt1{
+    margin-right: 0em;
+    margin-bottom: 0.5em;
+  }
+  body{
+    font-size: 10vw;
+  }
+}
